@@ -1,0 +1,24 @@
+// text-decoration
+@mixin link($color) {
+  text-decoration: none;
+  color: $color;
+}
+
+// flex position
+@mixin flex-align($direction) {
+  @if $direction == 'center' {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } @else if $direction == 'space-between' {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+// decoration text
+@mixin title-size($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}

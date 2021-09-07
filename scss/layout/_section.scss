@@ -1,0 +1,182 @@
+.section {
+  &__desktop {
+    // @include flex-align('center');
+  }
+  &__head {
+    display: flex;
+    flex-direction: column;
+    padding-top: 104px;
+    padding-bottom: 92px;
+    @include mq($screen-md) {
+      padding-top: 89px;
+      padding-bottom: 64px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    .head__title {
+      @include title-size(28px, 38px);
+      font-weight: 800;
+      text-align: center;
+      color: $bg-blue;
+      margin-bottom: 12px;
+      @include mq($screen-md) {
+        @include title-size(20px, 27px);
+      }
+    }
+    .head__text {
+      @include title-size(15px, 20px);
+      color: $bg-blue-d;
+      text-align: center;
+      @include mq($screen-md) {
+        @include title-size(13px, 23px);
+      }
+    }
+  }
+
+  .desktop {
+    margin: 0 auto;
+    max-width: 540px;
+    background: #ffffff;
+    box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+    border-radius: 8px;
+    padding-bottom: 33px;
+    @include mq($screen-md) {
+      margin: 0 24px;
+    }
+    &__info {
+      // margin-top: 58px;
+      padding: 58px 48px 0;
+      display: flex;
+      flex-wrap: wrap;
+      @include mq($screen-md) {
+        justify-content: center;
+        padding: 34px 24px 0;
+      }
+
+      .text__pageviews {
+        @include title-size(14px, 19px);
+        font-weight: 800;
+        color: $bg-blue-d;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        flex-grow: 2;
+        @include mq($screen-md) {
+          order: 1;
+          flex-grow: 1;
+          text-align: center;
+        }
+      }
+      .text__number {
+        @include title-size(16px, 22px);
+        color: $bg-blue-d;
+        .number__span {
+          @include title-size(40px, 55px);
+          font-weight: 800;
+          letter-spacing: -1px;
+          color: $bg-blue;
+          margin-right: 8px;
+        }
+        @include mq($screen-md) {
+          order: 3;
+        }
+      }
+      .info__slider {
+        margin-top: 24px;
+        @include mq($screen-md) {
+          order: 1;
+          margin-top: 41px;
+          margin-bottom: 41px;
+        }
+      }
+    }
+    &__choose {
+      margin-top: 57px;
+      padding: 0 65px 45px;
+      border-bottom: solid 1px $bg-white-g;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      @include mq($screen-md) {
+        margin-top: 34px;
+        padding-bottom: 38px;
+        padding-left: 0;
+        padding-right: 24px;
+      }
+
+      .choose__text {
+        @include title-size(12px, 16px);
+        color: $bg-blue-d;
+      }
+      .choose__slider {
+        margin: 0 16px;
+      }
+      .choose__percent {
+        display: inline-block;
+        border: solid 1px $bg-pink;
+        background: $bg-pink;
+        border-radius: 9.5px;
+        width: 82px;
+        height: 21px;
+        margin-left: 9px;
+        color: $bg-pink-d;
+        @include title-size(10px, 14px);
+        font-weight: 800;
+        text-align: center;
+        padding: 2px 0;
+        @include mq($screen-sm) {
+          width: 43px;
+          .percent__span {
+            display: none;
+          }
+        }
+      }
+    }
+    &__sub {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 32px;
+      padding: 0 48px;
+      @include mq($screen-md) {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 24px;
+      }
+      .desktop__list {
+        @include mq($screen-md) {
+          margin-bottom: 33px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .list {
+          &__li {
+            @include title-size(12px, 16px);
+            color: $bg-blue-d;
+            padding-bottom: 11px;
+            list-style: none;
+            position: relative;
+            padding-left: 16px;
+            @include mq($screen-md) {
+              text-align: center;
+            }
+            &::before {
+              content: '';
+              display: inline-block;
+              // width: 0;
+              // height: 0;
+              position: absolute;
+              width: 7px;
+              height: 8px;
+              background-image: url('../img/Path.svg');
+              // background-size: 100%;
+              background-repeat: no-repeat;
+              left: 0px;
+              top: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

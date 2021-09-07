@@ -1,0 +1,17 @@
+.desktop__button {
+  width: 172px;
+  height: 41px;
+  background: $bg-blue;
+  border-radius: 20.5px;
+  border: solid 1px $bg-blue;
+  @include title-size(12px, 16px);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include link($bg-blue-m);
+  cursor: pointer;
+  // @include mq($screen-md) {
+  //   width: 170px;
+  // }
+}
