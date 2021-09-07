@@ -1,7 +1,4 @@
 .section {
-  &__desktop {
-    // @include flex-align('center');
-  }
   &__head {
     display: flex;
     flex-direction: column;
@@ -44,7 +41,6 @@
       margin: 0 24px;
     }
     &__info {
-      // margin-top: 58px;
       padding: 58px 48px 0;
       display: flex;
       flex-wrap: wrap;
@@ -163,13 +159,10 @@
             &::before {
               content: '';
               display: inline-block;
-              // width: 0;
-              // height: 0;
               position: absolute;
               width: 7px;
               height: 8px;
               background-image: url('../img/Path.svg');
-              // background-size: 100%;
               background-repeat: no-repeat;
               left: 0px;
               top: 5px;

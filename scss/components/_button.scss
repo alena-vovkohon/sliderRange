@@ -11,7 +11,4 @@
   justify-content: center;
   @include link($bg-blue-m);
   cursor: pointer;
-  // @include mq($screen-md) {
-  //   width: 170px;
-  // }
 }
