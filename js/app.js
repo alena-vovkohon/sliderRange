@@ -2,6 +2,9 @@ let sliderInfo = document.querySelector('#range1')
 let sliderChoose = document.querySelector('#range2')
 let pageviewsText = document.querySelector('.pageviews__span')
 let numberText = document.querySelector('.number__span')
+let buttonShow = document.querySelector('.desktop__button')
+let buttonClose = document.querySelector('.dialog__button')
+let dialog = document.querySelector('.desktop__dialog')
 
 let info = [
   { name: '1', pageviews: '10K', full_price: 8 },
@@ -43,3 +46,15 @@ sliderChoose.oninput = function () {
 
 sliderInfo.oninput()
 sliderChoose.oninput()
+
+// window.alert('sometext')
+buttonShow.onclick = function () {
+  dialog.classList.add('open')
+  console.log('show')
+  // dialog.show()
+}
+buttonClose.onclick = function () {
+  // dialog.close()
+  dialog.classList.remove('open')
+  console.log('close')
+}

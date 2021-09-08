@@ -1,4 +1,4 @@
-.desktop__button {
+button {
   width: 172px;
   height: 41px;
   background: $bg-blue;
@@ -6,9 +6,9 @@
   border: solid 1px $bg-blue;
   @include title-size(12px, 16px);
   font-weight: 800;
+  color: $bg-blue-m;
   display: flex;
   align-items: center;
   justify-content: center;
-  @include link($bg-blue-m);
   cursor: pointer;
 }

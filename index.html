@@ -1,95 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Desktop JS</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="css/style.css" type="text/css" />
-    </head>
-    <body>
-        <section class="section">
-            <div class="container-bg">
-                    <section class="section__desktop">
-                        <div class="section__head">
-                            <h3 class="head__title">
-                                Simple, traffic-based pricing
-                            </h3>
-                            <p class="head__text">
-                                Sign-up for our 30-day trial. No credit card
-                                required.
-                            </p>
-                        </div>
-                        <!-- /.head -->
-                        <div class="desktop">
-                            <div class="desktop__info">
-                                <p class="text__pageviews">
-                                    <span class="pageviews__span">100K</span>
-                                    PAGEVIEWS
-                                </p>
-                                <p class="text__number">
-                                    <span class="number__span">$16.00</span>
-                                    /month
-                                </p>
-                                <input
-                                    class="info__slider"
-                                    id="range1"
-                                    type="range"
-                                    min="1"
-                                    max="5"
-                                    step="1"
-                                    value="3"
-                                    
-                                />
-                            </div>
-                            <!-- /.desktop__info -->
-                            <div class="desktop__choose">
-                                <p class="choose__text">Monthly Billing</p>
-                                <input
-                                    class="choose__slider"
-                                    id="range2"
-                                    type="range"
-                                    min="1"
-                                    max="2"
-                                    step="1"
-                                    value="1"
-                                    
-                                />
-                                <p class="choose__text">Yearly Billing</p>
-                                <p class="choose__percent">
-                                    25%
-                                    <span class="percent__span">discount</span>
-                                </p>
-                            </div>
-                            <!-- /.desktop__choose -->
-                            <div class="desktop__sub">
-                                <ul class="desktop__list">
-                                    <li class="list__li">Unlimited websites</li>
-                                    <li class="list__li">
-                                        100% data ownership
-                                    </li>
-                                    <li class="list__li">Email reports</li>
-                                </ul>
-                                <a class="desktop__button" href=""
-                                    >Start my trial</a
-                                >
-                            </div>
-                            <!-- /.desktop__sub -->
-                        </div>
-                        <!-- /.desktop -->
-                    </section>
-                </div>
-            </div>
-        </section>
-        
-        <script src="js/app.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desktop JS</title>
 
-    </body>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+  <section class="section">
+    <div class="container-bg">
+      <section class="section__desktop">
+        <div class="section__head">
+          <h3 class="head__title">
+            Simple, traffic-based pricing
+          </h3>
+          <p class="head__text">
+            Sign-up for our 30-day trial. No credit card
+            required.
+          </p>
+        </div>
+        <!-- /.head -->
+        <div class="desktop">
+          <div class="desktop__info">
+            <p class="text__pageviews">
+              <span class="pageviews__span">100K</span>
+              PAGEVIEWS
+            </p>
+            <p class="text__number">
+              <span class="number__span">$16.00</span>
+              /month
+            </p>
+            <input class="info__slider" id="range1" type="range" min="1" max="5" step="1" value="3" />
+          </div>
+          <!-- /.desktop__info -->
+          <div class="desktop__choose">
+            <p class="choose__text">Monthly Billing</p>
+            <input class="choose__slider" id="range2" type="range" min="1" max="2" step="1" value="1" />
+            <p class="choose__text">Yearly Billing</p>
+            <p class="choose__percent">
+              25%
+              <span class="percent__span">discount</span>
+            </p>
+          </div>
+          <!-- /.desktop__choose -->
+          <div class="desktop__sub">
+            <ul class="desktop__list">
+              <li class="list__li">Unlimited websites</li>
+              <li class="list__li">
+                100% data ownership
+              </li>
+              <li class="list__li">Email reports</li>
+            </ul>
+            <button class="desktop__button" href="">Start my trial</button>
+          </div>
+          <!-- /.desktop__sub -->
+          <div class="desktop__dialog">
+            <h3 class="dialog__title">Congratulations!</h3>
+            <p class="dialog__text"> Your subscription is activated.</p>
+            <button class="dialog__button" id="close">Close</button>
+          </div>
+          <!-- /dialog -->
+        </div>
+        <!-- /.desktop -->
+      </section>
+    </div>
+    </div>
+  </section>
+
+  <script src="js/app.js"></script>
+
+</body>
+
 </html>

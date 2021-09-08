@@ -9,7 +9,7 @@ body {
   background: #f2f2f2;
 }
 
-.desktop__button {
+button {
   width: 172px;
   height: 41px;
   background: #293356;
@@ -18,11 +18,10 @@ body {
   font-size: 12px;
   line-height: 16px;
   font-weight: 800;
+  color: #becdff;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
-  color: #becdff;
   cursor: pointer;
 }
 
@@ -88,6 +87,63 @@ input.choose__slider:hover {
   background-position: top 65px left 50%;
 }
 
+.desktop__dialog {
+  display: none;
+}
+.desktop__dialog.open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 100px;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #becdff;
+  box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+  border-radius: 8px;
+  padding-bottom: 33px;
+}
+.desktop__dialog.open .dialog__title {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 800;
+  text-align: center;
+  color: #848ead;
+  margin-bottom: 12px;
+}
+@media only screen and (max-width: 600px) {
+  .desktop__dialog.open .dialog__title {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+.desktop__dialog.open .dialog__text {
+  font-size: 20px;
+  line-height: 23px;
+  color: #293356;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+@media only screen and (max-width: 600px) {
+  .desktop__dialog.open .dialog__text {
+    font-size: 13px;
+    line-height: 23px;
+  }
+}
+.desktop__dialog.open .dialog__button {
+  align-self: flex-end;
+}
+@media only screen and (max-width: 600px) {
+  .desktop__dialog.open .dialog__button {
+    align-self: center;
+  }
+}
+
 .section__head {
   display: flex;
   flex-direction: column;
@@ -129,6 +185,7 @@ input.choose__slider:hover {
   }
 }
 .section .desktop {
+  position: relative;
   margin: 0 auto;
   max-width: 540px;
   background: #ffffff;
@@ -145,6 +202,7 @@ input.choose__slider:hover {
   padding: 58px 48px 0;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 @media only screen and (max-width: 600px) {
   .section .desktop__info {
@@ -172,6 +230,8 @@ input.choose__slider:hover {
   font-size: 16px;
   line-height: 22px;
   color: #848ead;
+  display: flex;
+  align-items: center;
 }
 .section .desktop__info .text__number .number__span {
   font-size: 40px;
@@ -210,6 +270,13 @@ input.choose__slider:hover {
     padding-bottom: 38px;
     padding-left: 0;
     padding-right: 24px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .section .desktop__choose {
+    padding-left: 24px;
+    padding-right: 24px;
+    justify-content: center;
   }
 }
 .section .desktop__choose .choose__text {
