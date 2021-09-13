@@ -37,12 +37,22 @@
               <span class="number__span">$16.00</span>
               /month
             </p>
-            <input class="info__slider" id="range1" type="range" min="1" max="5" step="1" value="3" />
+            <div class="slider">
+              <input class="info__slider" id="range" type="range" min="1" max="5" step="1" value="3" />
+            <!-- <label  class="info__label" for="range"></label> -->
+
+            </div>
+            
           </div>
           <!-- /.desktop__info -->
           <div class="desktop__choose">
             <p class="choose__text">Monthly Billing</p>
-            <input class="choose__slider" id="range2" type="range" min="1" max="2" step="1" value="1" />
+            <div class="choose__checkbox">
+              <input type="checkbox" class="choose__slider" id="checkbox" value="1">
+              <label  class="checkbox__label" for="checkbox"></label>
+            </div>
+
+
             <p class="choose__text">Yearly Billing</p>
             <p class="choose__percent">
               25%
@@ -73,6 +83,10 @@
     </div>
     </div>
   </section>
+
+  <!-- <section class="test">
+    <input class="slider" id="range" type="range" min="1" max="5" step="1" value="3" />
+  </section> -->
 
   <script src="js/app.js"></script>
 

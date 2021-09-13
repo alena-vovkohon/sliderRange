@@ -1,5 +1,5 @@
-let sliderInfo = document.querySelector('#range1')
-let sliderChoose = document.querySelector('#range2')
+let sliderInfo = document.querySelector('#range')
+let sliderChoose = document.querySelector('#checkbox')
 let pageviewsText = document.querySelector('.pageviews__span')
 let numberText = document.querySelector('.number__span')
 let buttonShow = document.querySelector('.desktop__button')
@@ -22,7 +22,7 @@ function get_price() {
       // console.log('current name ' + info[i].name)
       // console.log(info[i].pageviews)
       pageviewsText.innerHTML = info[i].pageviews
-      if (billing_plan == 2) {
+      if (billing_plan == true) {
         let new_price = info[i].full_price * 0.75
         // console.log(new_price)
         numberText.innerHTML = '$' + new_price + '.00'
@@ -39,7 +39,7 @@ sliderInfo.oninput = function () {
 }
 
 sliderChoose.oninput = function () {
-  billing_plan = this.value
+  billing_plan = this.checked
   console.log('billing_plan =' + billing_plan)
   get_price()
 }
@@ -47,14 +47,11 @@ sliderChoose.oninput = function () {
 sliderInfo.oninput()
 sliderChoose.oninput()
 
-// window.alert('sometext')
 buttonShow.onclick = function () {
   dialog.classList.add('open')
   console.log('show')
-  // dialog.show()
 }
 buttonClose.onclick = function () {
-  // dialog.close()
   dialog.classList.remove('open')
   console.log('close')
 }

@@ -1,0 +1,23 @@
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  // border: 1px solid lightblue;
+  // width: 300px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.slider::-moz-range-progress {
+  background-color: #4caf50;
+}
+.slider::-moz-range-track {
+  background-color: #d3d3d3;
+}
+/* IE*/
+.slider::-ms-fill-lower {
+  background-color: #4caf50;
+}
+.slider::-ms-fill-upper {
+  background-color: #d3d3d3;
+}

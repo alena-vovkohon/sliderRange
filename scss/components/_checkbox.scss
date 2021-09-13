@@ -1,0 +1,32 @@
+.choose__checkbox {
+  position: relative;
+  width: 43px;
+  height: 22px;
+  background: $bg-blue-s;
+  border-radius: 15px;
+  margin: 0 16px;
+  &:hover {
+    background: $bg-green;
+  }
+
+  input[type='checkbox'] {
+    display: none;
+    &:checked + .checkbox__label {
+      left: 24px;
+    }
+  }
+  .checkbox__label {
+    position: absolute;
+    border-radius: 50%;
+    background: $bg-white;
+    width: 14px;
+    height: 14px;
+    margin: 4px 0;
+    top: 0;
+    left: 4px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+}
